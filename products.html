@@ -41,6 +41,7 @@
     <!-- bootstrap grid -->
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
 
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -74,8 +75,8 @@
                     <div class="gnb">
                         <h1 class="logo"><a href=""><img src="images/shopy_log.png" alt="shopy Logo"></a></h1>
                         <ul>
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./products.html">Products</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
                             <li><a href="">HotDeals</a></li>
                             <li><a href="">About</a></li>
                             <li><a href="">Contact</a></li>
@@ -94,54 +95,68 @@
             <input type="submit" value="검색" class="search_btn sprites" >
         </form>
     </header>
-    <section class="main_slides">
-        <h2 class="hidden">main_slides</h2>
-        <ul>
-            <li class="slide slide1">
-                <div class="container slide_contents">
-                    <div class="contents jumbotron">
-                        <h2>FULL WINTER KIT</h2>
-                        <h3>Half Jacket + Skiny Trousers + Boot leather</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
-                        <div class="price_order">
-                            <span class="price">Price : $120</span>
-                            <span class="cart sprites">cart</span>
-                            <a class="order_now" href="">Order now</a>
-                        </div>
+          
+    <main class="container">
+        <section class="filters">
+            <h2 class="hidden">category filter</h2>
+            <div class="category_menu">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="">Men</a></li>
+                    <li><a href="">Women</a></li>
+                    <li><a href="">Childrens</a></li>
+                    <li><a href="">Hot Dedeals</a></li>
+                </ul>
+            </div><!-- //category_menu -->
+            <div class="list_filters row">
+                <div class="price_filter col-md-4">
+                    <h3>Price filter</h3>
+                    <div class="price_range"></div>
+                    <div class="range_form">
+                        <label for="from">from</label>
+                        <input type="text" id="from">
+                        <label for="to">to</label>
+                        <input type="text" id="to">
                     </div>
                 </div>
-            </li>
-            <li class="slide slide1">
-                <div class="container slide_contents">
-                    <div class="contents jumbotron">
-                        <h2>FULL WINTER KIT</h2>
-                        <h3>Half Jacket + Skiny Trousers + Boot leather</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
-                        <div class="price_order">
-                            <span class="price">Price : $120</span>
-                            <span class="cart sprites">cart</span>
-                            <a class="order_now" href="">Order now</a>
-                        </div>
-                    </div>
+                <div class="size_filter col-md-4">
+                    <h3>Sizes</h3>
+                    <input type="checkbox" id="small" name="size">
+                    <span class="box">box</span>
+                    <label for="small">Small</label>
+
+                    <input type="checkbox" id="medium" name="size">
+                    <span class="box">box</span>
+                    <label for="medium">Medium</label>
+
+                    <input type="checkbox" id="large" name="size">
+                    <span class="box">box</span>
+                    <label for="large">Large</label>
+
+                    <input type="checkbox" id="xlarge" name="size">
+                    <span class="box">box</span>
+                    <label for="xlarge">xlarge</label>
                 </div>
-            </li>
-            <li class="slide slide1">
-                <div class="container slide_contents">
-                    <div class="contents jumbotron">
-                        <h2>FULL WINTER KIT</h2>
-                        <h3>Half Jacket + Skiny Trousers + Boot leather</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
-                        <div class="price_order">
-                            <span class="price">Price : $120</span>
-                            <span class="cart sprites">cart</span>
-                            <a class="order_now" href="">Order now</a>
-                        </div>
-                    </div>
+                <div class="brand_filter col-md-4">
+                    <h3>Brands</h3>
+                    <input type="checkbox" id="reebok" name="brand">
+                    <span class="box">box</span>
+                    <label for="reebok">Reebok</label>
+
+                    <input type="checkbox" id="addidas" name="brand">
+                    <span class="box">box</span>
+                    <label for="addidas">Addidas</label>
+
+                    <input type="checkbox" id="nike" name="brand">
+                    <span class="box">box</span>
+                    <label for="nike">Nike</label>
+
+                    <input type="checkbox" id="puma" name="brand">
+                    <span class="box">box</span>
+                    <label for="puma">puma</label>
                 </div>
-            </li>
-        </ul>
-    </section><!-- //main_slides -->
-    <main class="container">        
+            </div>
+        </section><!-- //filters -->        
         <section class="new_arrivals">
             <h2 class="content_title"><span>New</span>arrivals</h2>
             <p class="content_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
@@ -263,6 +278,7 @@ src="https://code.jquery.com/jquery-3.4.1.min.js"
 integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/main.js"></script>
 
 </body>
