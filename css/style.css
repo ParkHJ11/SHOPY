@@ -348,6 +348,9 @@ header form input[type="submit"] {
     height: 365px;
     transition: box-shadow 0.5s;
 }
+.new_arrivals_list > li{
+    padding-bottom:20px; 
+}
 .new_arrivals_list > li .default img{
     width: 60%;
     transition: width 0.5s;
@@ -561,4 +564,104 @@ form hr{
     font-size: 18px;
     color: #34404b;
     margin-right: 20px;
+}
+
+/* products.html */
+.category_menu{
+    background:#fff;
+    padding:30px 40px;
+    display:flex;
+}
+.category_menu h3,.list_filters h3{
+    width: 100px;
+    font-size: 18px;
+    font-weight: 800;
+    color:#ff5912;
+    margin-right: 30px;
+}
+.category_menu ul{
+    display: flex;
+}
+.category_menu ul li{
+    margin-right:20px;       
+}
+.category_menu ul li a,.list_filters label{
+    color:#34404b;
+    font-weight: 600;
+    font-size: 18px;
+}
+.price_filter{
+    margin-bottom: 20px;
+}
+.price_filter > *{
+    display: inline-block;
+}
+.price_range{
+    width: 186px;
+}
+.price_filter .ui-widget.ui-widget-content{
+    border:none;
+    height: 3px;
+    background: #edf0f2;
+}
+.price_filter .ui-slider-handle{
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background:#34404b;
+}
+.price_filter .ui-slider-range{
+    background:#34404b;
+}
+.price_filter .price_range span i{
+    width: 50px;
+    position: absolute;
+    left: -50%;
+    top: -20px;
+    font-style: normal;
+    color: #34404b;
+    font-size: 14px;
+}
+.range_form{
+    margin-left: 40px;
+}
+.range_form input{
+    width: 45px;
+    height: 25px;
+    background: #edf0f2;
+    text-align: center;
+}
+.list_filters {
+    background:#fff;
+    padding:30px 40px;
+    margin: 30px 0 0;
+}
+.list_filters .size_filter,
+.list_filters .brand_filter{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.list_filters h3{
+    margin-right: 30px;
+}
+.size_filter input, 
+.brand_filter input{
+    display:none;
+}
+.list_filters .box{
+    width: 13px;
+    height: 13px;
+    background:#edf0f2;
+    text-indent: -9999em;
+    box-sizing: border-box;
+    border:4px solid transparent;
+    margin-right: 12px;
+}
+.list_filters input:checked + .box{
+    background: #fff;
+    border:4px solid #ff5912;   
+}
+.list_filters label{
+    margin-right: 12px;
 }
